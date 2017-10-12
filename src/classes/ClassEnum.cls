@@ -1,4 +1,4 @@
 public enum ClassEnum
 {
-ONE, TWO, THREE
+    America, Canada, Russia
 }

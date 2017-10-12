@@ -1,8 +1,5 @@
 public class GetSetDemo {
-    public double MyReadWritePropPublic {
-        get;
-        set;
-    }
+    public double MyReadWritePropPublic { get; set; }
     private Integer propPrvt;
     public Integer prop {
         get {
@@ -15,10 +12,7 @@ public class GetSetDemo {
     public Integer MyReadOnlyProp {
         get;
     }
-    public double MyReadWriteProp {
-        get;
-        set;
-    }
+
     private static Integer myStaticPropPrvt;
     public static Integer MyStaticProp {
         get {
@@ -26,53 +20,36 @@ public class GetSetDemo {
         }
     }
 
-    Integer MyReadOnlyPropPrvt {
-        get;
+    Integer MyReadOnlyPropPrvt { get;}
+    double MyReadWritePropPrvt {get; set;
     }
-    double MyReadWritePropPrvt {
-        get;
-        set;
-    }
-    public String MyWriteOnlyProp {
-        get;
-    }
-    protected String MyWriteOnlyPropPrvt {
-        set;
-        get;
+    public String MyWriteOnlyProp {get; }
+    protected String MyWriteOnlyPropPrvt { set; get;
     }
 
     private string namePrvt;
 
-    public string getName
-    {
-        get
-        {
+    public string getName {
+        get {
             return namePrvt;
         }
-        private set
-        {
+        private set {
             namePrvt = value;
         }
     }
-    public string Stubbing
-    {
-        private get
-        {
+    public string Stubbing {
+        private get {
             return namePrvt;
         }
-        set
-        {
+        set {
             namePrvt = value;
         }
     }
-    public string DoThrowWhenException
-    {
-        get
-        {
+    public string DoThrowWhenException {
+        get {
             return namePrvt;
         }
-        set
-        {
+        set {
             namePrvt = value;
         }
     }

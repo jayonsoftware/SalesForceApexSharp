@@ -1,60 +1,61 @@
-public with sharing class ForIfWhile
-{
-    public void MethodIfClean()
-    {
-        String medal_color ;
-        Integer place ;
-        if (place == 1)
-        {
-            medal_color = 'gold' ;
-        }
-        else if (place == 2)
-        {
-            medal_color = 'silver' ;
-        }
-        else if (place == 3)
-        {
-            medal_color = 'bronze' ;
-        }
-        else
-        {
-            medal_color = null ;
+public class ForIfWhile {
+    public void MethodIfClean(Integer place) {
+        String modelColor;
+
+        if (place == 1) {
+            modelColor = 'Gold' ;
+        } else if (place == 2) {
+            modelColor = 'Silver' ;
+        } else if (place == 3) {
+            modelColor = 'Bronze' ;
+        } else {
+            modelColor = null ;
         }
     }
-    public void MethodForTraditional()
-    {
-        for (Integer i = 0, j = 0;
-                i < 10;
-                i++)
+    public void MethodForTraditional() {
+        for (Integer i = 0;i < 10;i++)
         {
             System.debug (i + 1) ;
         }
     }
-    public void MethodForIteration()
-    {
+    public void MethodForIteration() {
         Integer[] myInts = new Integer[5] ;
-        for (Integer i : myInts)
-        {
-            System.debug (i) ;
+        for (Integer myInt : myInts) {
+            System.debug (myInt) ;
         }
     }
-    public void MethodDo()
-    {
+    public void MethodDo() {
         Integer count = 1 ;
-        do
-        {
+        do {
+            System.debug (count) ;
+            count++ ;
+        } while (count < 11) ;
+    }
+    public void MethodWhile() {
+        Integer count = 1 ;
+        while (count < 11) {
             System.debug (count) ;
             count++ ;
         }
-        while (count < 11) ;
     }
-    public void MethodWhile()
+
+    public void ForLoopTest()
     {
-        Integer count = 1 ;
-        while (count < 11)
+        for (Integer i = 0; i < 10; i++)
         {
-            System.debug (count) ;
-            count++ ;
+            System.debug (i + 1);
+        }
+    }
+
+    public static string GetContact(String nameString)
+    {
+        if (nameString.Length() > 0)
+        {
+            return nameString;
+        }
+        else
+        {
+            return '';
         }
     }
 }

@@ -5,9 +5,9 @@ public class PropertyAndField
     public List<DateTime> DateTimeGetSetGeneric { get; set; }
     public DateTime[] DateTimeGetSetArray { get; set; }
     public DateTime DateTimeEmpty;
-    public DateTime DateTimeInitilized = DateTime.now();
+    public DateTime DateTimeInitialized = DateTime.now();
     public List<DateTime> DateTimeList = new List<DateTime>();
-    public DateTime[] DateTimeArrary = new DateTime[5];
+    public DateTime[] DateTimeArray = new DateTime[5];
     public String Name = 'jay';
     public final String nameFinal = 'jay';
     public static String NameStatic = 'jay';

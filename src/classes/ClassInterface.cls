@@ -1,4 +1,10 @@
-public interface ClassInterface
+public class ClassInterface implements IClassInterface
 {
-    string getName();
+    public Id GetId() {
+        return '';
+    }
+    public string GetName()
+    {
+        return 'Jay';
+    }
 }

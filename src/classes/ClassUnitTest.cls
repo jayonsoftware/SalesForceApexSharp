@@ -6,20 +6,19 @@ public class ClassUnitTest
     {
         System.Debug('One Time Setup Got Called');
     }
-    @isTest static public void Assert()
+    @isTest public static void AssertTrue()
     {
         System.Assert(true, 'Assert True');
     }
-    @isTest static public void AssertEquals()
+    @isTest public static void AssertEquals()
     {
         System.AssertEquals(5, 5, 'Assert Equal');
     }
-    @isTest static public void AssertNotEquals()
+    @isTest public static void AssertNotEquals()
     {
-        System.AssertEquals(5, 0, 'Assert Not Equal');
+        System.AssertNotEquals(5, 0, 'Assert Not Equal');
     }
-
-    static testMethod public void AssertNew()
+    testMethod public static void AssertNew()
     {
         System.Assert(true, 'Assert True');
     }
@@ -27,8 +26,8 @@ public class ClassUnitTest
     {
         System.AssertEquals(5, 5, 'Assert Equal');
     }
-    static testMethod public void AssertNotEqualsNew()
+    static public testMethod void AssertNotEqualsNew()
     {
-        System.AssertEquals(5, 0, 'Assert Not Equal');
+        System.AssertNotEquals(5, 0, 'Assert Not Equal');
     }
 }

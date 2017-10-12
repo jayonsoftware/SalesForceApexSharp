@@ -1,11 +1,11 @@
-public with sharing class JsonExample
+public class JsonExample
 {
-    public void JsonExample()
+    public void JsonExampleMethod()
     {
         String name = 'Jay';
 
-        String JSONString = JSON.Serialize(name);
+        String jsonString = JSON.Serialize(name);
 
-      //  name = JSON.Deserialize(JSONString, String.class);
+        String newName = (String)JSON.Deserialize(jsonString, String.class);
     }
 }

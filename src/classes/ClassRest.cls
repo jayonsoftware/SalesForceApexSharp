@@ -2,27 +2,28 @@
 global class ClassRest
 {
     @httpDelete
-    global static void doDelete()
+    global static void DoDelete()
     {
     }
 
     @httpPost
-    global static void doPost()
+    global static void Post()
     {
     }
 
     @httpGet
-    global static void doGet()
+    global static string Get()
     {
+        return 'Jay';
     }
 
     @httpPatch
-    global static void doPatch()
+    global static void Patch()
     {
     }
 
     @httpPut
-    global static void doPut()
+    global static void Put()
     {
     }
 }

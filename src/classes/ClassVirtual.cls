@@ -1,6 +1,6 @@
 public virtual class ClassVirtual
 {
-    protected void ProtectedMethod(){
+    public void ProtectedMethod(){
 
     }
 }

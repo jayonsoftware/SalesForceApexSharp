@@ -1,4 +1,4 @@
-public with sharing class ExceptionDemo {
+public class ExceptionDemo {
     public static void CatchDemo() {
         try {
             ThrowDemo();

@@ -6,15 +6,18 @@ public class ClassUnitTest
     {
         System.Debug('One Time Setup Got Called');
     }
-    @isTest public static void AssertTrue()
+    @isTest
+    public static void AssertTrue()
     {
         System.Assert(true, 'Assert True');
     }
-    @isTest public static void AssertEquals()
+    @isTest
+    public static void AssertEquals()
     {
         System.AssertEquals(5, 5, 'Assert Equal');
     }
-    @isTest public static void AssertNotEquals()
+    @isTest
+    public static void AssertNotEquals()
     {
         System.AssertNotEquals(5, 0, 'Assert Not Equal');
     }

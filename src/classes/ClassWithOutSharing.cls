@@ -1,4 +1,3 @@
-public without  sharing class ClassWithOutSharing
+public without sharing class ClassWithOutSharing
 {
-
 }

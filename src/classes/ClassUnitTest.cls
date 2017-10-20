@@ -33,4 +33,17 @@ public class ClassUnitTest
     {
         System.AssertNotEquals(5, 0, 'Assert Not Equal');
     }
+    static testMethod void StaticTestMethod()
+    {
+
+    }
+
+    static testMethod void RunAsExample()
+    {
+        User newUser = new User();
+        System.RunAs(newUser)
+        {
+
+        }
+    }
 }

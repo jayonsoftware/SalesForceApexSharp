@@ -89,4 +89,11 @@ public class ForIfWhile
             return '';
         }
     }
+
+    public static void ForSoql()
+    {
+        for(Contact contactList : [SELECT Id, Name FROM Contact]) {
+
+        }
+    }
 }

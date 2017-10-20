@@ -13,6 +13,11 @@ public class PropertyAndField
     public static String NameStatic = 'jay';
     public static final String NameStaticFinal = 'jay';
 
+    public boolean shouldRedirect { get;set; }
+    {
+        shouldRedirect =false;
+    }
+
     public void MethodOne()
     {
         DateTime dateTimeEmpty;

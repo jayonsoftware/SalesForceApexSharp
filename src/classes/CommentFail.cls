@@ -6,5 +6,4 @@ public with sharing class CommentFail
 * to return on the sObject.
 * ************************************************************************************************
 */
-
 }

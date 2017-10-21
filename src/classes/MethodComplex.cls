@@ -1,5 +1,6 @@
 public with sharing class MethodComplex {
     public static void MethodOne() {
+
         for (Account a : [SELECT Id FROM Account]) {
             System.debug(a.Id);
         }
@@ -8,5 +9,4 @@ public with sharing class MethodComplex {
 
         }
     }
-
 }

@@ -37,13 +37,5 @@ public class ClassUnitTest
     {
 
     }
-
-    static testMethod void RunAsExample()
-    {
-        User newUser = new User();
-        System.RunAs(newUser)
-        {
-
-        }
-    }
 }
+

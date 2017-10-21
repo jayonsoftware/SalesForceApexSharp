@@ -13,10 +13,14 @@ public class PropertyAndField
     public static String NameStatic = 'jay';
     public static final String NameStaticFinal = 'jay';
 
+    public Set<String> stringSet = new Set<String>{};
+
     public boolean shouldRedirect { get;set; }
     {
         shouldRedirect =false;
     }
+
+    public String[] newStringArray = new String[] {'Hi'};
 
     public void MethodOne()
     {

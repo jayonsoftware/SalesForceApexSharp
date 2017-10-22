@@ -33,9 +33,10 @@ public class ClassUnitTest
     {
         System.AssertNotEquals(5, 0, 'Assert Not Equal');
     }
-
-    testMethod void StaticTestMethod()
+    static testMethod void StaticTestMethod()
     {
-
+        //System.AssertNotEquals(5, 0, 'Assert Not Equal');
+        System.AssertNotEquals(5, 0, 'Assert Not Equal');
+        //System.AssertNotEquals(5, 0, 'Assert Not Equal');
     }
 }

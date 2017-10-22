@@ -14,17 +14,24 @@ public class GetSetDemo {
     }
 
     private static Integer myStaticPropPrvt;
+
     public static Integer MyStaticProp {
         get {
             return myStaticPropPrvt;
         }
     }
 
-    Integer MyReadOnlyPropPrvt { get;}
-    double MyReadWritePropPrvt {get; set;
+    Integer MyReadOnlyPropPrvt { get; }
+
+    double MyReadWritePropPrvt {
+        get;
+        set;
     }
-    public String MyWriteOnlyProp {get; }
-    protected String MyWriteOnlyPropPrvt { set; get;
+    public String MyWriteOnlyProp { get; }
+
+    protected String MyWriteOnlyPropPrvt {
+        set;
+        get;
     }
 
     private string namePrvt;

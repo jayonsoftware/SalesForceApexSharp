@@ -33,9 +33,9 @@ public class ClassUnitTest
     {
         System.AssertNotEquals(5, 0, 'Assert Not Equal');
     }
-    static testMethod void StaticTestMethod()
+
+    testMethod void StaticTestMethod()
     {
 
     }
 }
-

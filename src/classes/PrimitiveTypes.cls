@@ -12,9 +12,12 @@ public class PrimitiveTypes
     public Time MyTime = Time.NewInstance(1, 2, 3, 4);
     public String MyString = 'Jay';
 
+    public string abc, def, jkl;
+
     public void DemoMethod()
     {
         object obj = 10;
         Integer i = (Integer)obj;
+        string abc1, def1, jkl1;
     }
 }

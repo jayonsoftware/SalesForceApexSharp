@@ -1,4 +1,14 @@
-public with sharing class SoqlDemo {
+public with sharing abstract class SoqlDemo {
+
+    public List<Contact> contactList = [SELECT Id, Email FROM Contact];
+
+    public SoqlDemo()
+    {
+        contactList = [SELECT Id, Email FROM Contact];
+    }
+
+    public abstract void AbstractMethod();
+
     /**
      * A simple CRUD Example
      */

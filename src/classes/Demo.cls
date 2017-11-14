@@ -1,6 +1,5 @@
 public class Demo
 {
-
     public Contact contact { get; set; }
 
     public Demo() {

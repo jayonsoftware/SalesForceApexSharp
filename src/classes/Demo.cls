@@ -9,7 +9,7 @@ public class Demo
     public PageReference Save() {
         try {
             insert contact;
-        } catch(DMLException e) {
+        } catch(DmlException  e) {
             ApexPages.AddMessages(e);
 
         }

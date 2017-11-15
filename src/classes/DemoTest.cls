@@ -8,7 +8,7 @@ private class DemoTest {
     //:NoApex   }
 
     @testSetup
-    static void Setup() {
+    public static void Setup() {
         Contact contactNew = new Contact();
         contactNew.LastName = 'Jay';
         contactNew.Email = 'jay@jay.com';
@@ -16,7 +16,7 @@ private class DemoTest {
     }
 
     @IsTest
-    static void UpdatePhoneTestValidEmail() {
+    public static void UpdatePhoneTestValidEmail() {
         Demo.UpdatePhone('jay@jay.com', '555-1212');
 
         List<Contact> contacts = [SELECT Id, Email, Phone FROM Contact WHERE Email = 'jay@jay.com'];
@@ -24,7 +24,7 @@ private class DemoTest {
     }
 
     @IsTest
-    static void UpdatePhoneTestNotValidEmail() {
+     public static void UpdatePhoneTestNotValidEmail() {
         Demo.UpdatePhone('nojay@jay.com', '555-1212');
 
         List<Contact> contacts = [SELECT Id, Email, Phone FROM Contact WHERE Email = 'nojay@jay.com'];

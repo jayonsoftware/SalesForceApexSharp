@@ -29,20 +29,20 @@ public class Demo
         }
     }
 
-    private static List<Contact> GetContactByEMail(string email)
+    public static List<Contact> GetContactByEMail(string email)
     {
         List<Contact> contacts = [SELECT Id, Email, Phone FROM Contact WHERE Email = :email];
         return contacts;
     }
 
 
-    private static List<Contact> GetContacts()
+    public static List<Contact> GetContacts()
     {
         List<Contact> contacts = [SELECT Id, Email, Phone FROM Contact];
         return contacts;
     }
 
-    private static void UpdateContacts(List<Contact> contacts)
+    public static void UpdateContacts(List<Contact> contacts)
     {
         update contacts;
     }

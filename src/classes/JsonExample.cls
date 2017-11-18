@@ -2,10 +2,11 @@ public class JsonExample
 {
     public void JsonExampleMethod()
     {
-        String name = 'Jay';
+        Contact contact = new Contact();
+        contact.LastName = 'Jay';
+        contact.Email = 'jay@jay.com';
 
-        String jsonString = JSON.Serialize(name);
-
-        String newName = (String)JSON.Deserialize(jsonString, String.class);
+        String jsonString = JSON.Serialize(contact);
+        Contact newContact = (Contact)JSON.Deserialize(jsonString, String.class);
     }
 }

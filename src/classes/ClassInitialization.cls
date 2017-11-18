@@ -1,15 +1,9 @@
-public with sharing class ClassInitialization {
+public class ClassInitialization {
 
     public List<Contact> contactList;
-
-    {
-        contactList = [SELECT Id FROM Contact LIMIT 1];
-    }
-
     public ClassInitialization() {
         contactList = [SELECT Id FROM Contact LIMIT 1];
     }
-
 
     public static Map<String, String> colorMap = new Map<String, String>();
 

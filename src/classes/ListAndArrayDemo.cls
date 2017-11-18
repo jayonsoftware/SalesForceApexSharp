@@ -3,7 +3,7 @@ public class ListAndArrayDemo {
     public Integer[] IntegerArray = new Integer[]{1, 2, 3};
 
     public void Method() {
-        List<String> StringListLocal = new List<String> { 'one', 'two' };
-        Integer[] IntegerArrayLocal = new Integer[]{1, 2, 3};
+        List<String> stringListLocal = new List<String> { 'one', 'two' };
+        Integer[] integerArrayLocal = new Integer[]{1, 2, 3};
     }
 }

@@ -1,11 +1,11 @@
-global abstract class MethodAndConstructor
+public abstract class MethodAndConstructor
 {
-    global abstract void MethodThree();
+    public abstract void MethodThree();
 
     MethodAndConstructor()
     {
     }
-    public MethodAndConstructor(String demo)
+    public MethodAndConstructor(string demo)
     {
     }
     public virtual void VirtualMethod()
@@ -42,7 +42,7 @@ global abstract class MethodAndConstructor
     {
         return 'Hello World';
     }
-    global string GetStringglobal()
+    public string GetStringglobal()
     {
         return 'Hello World';
     }
@@ -59,11 +59,11 @@ global abstract class MethodAndConstructor
     {
     }
 
-    global static Map<string, string> arrayMethodOne(Map<string, string> stringArray, List<string> stringArrayList)
+    public static Map<string, string> arrayMethodOne(Map<string, string> stringArray, List<string> stringArrayList)
     {
         return null;
     }
-    global static void arrayMethodTwo(List<string> stringArray)
+    public static void arrayMethodTwo(List<string> stringArray)
     {
     }
 

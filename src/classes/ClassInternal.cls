@@ -1,9 +1,12 @@
-public with sharing class ClassInternal
+public class ClassInternal
 {
-    ClassInternal.InternalClassOne classOne = new ClassInternal.InternalClassOne();
+    InternalClassOne classOne = new InternalClassOne();
+    ClassInternal.InternalClassTwo classTwo = new ClassInternal.InternalClassTwo();
+
     public class InternalClassOne
     {
     }
+
     public class InternalClassTwo
     {
     }

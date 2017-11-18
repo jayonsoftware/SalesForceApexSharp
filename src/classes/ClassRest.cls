@@ -1,12 +1,26 @@
-@RestResource(urlMapping='/api/v1/RestDemo')
+@RestResource(urlMapping='/api/RestDemo')
 global class ClassRest
 {
-    @httpDelete
-    global static void DoDelete() {
+    public class ContactDTO {
+        public String LastName {get;set;}
     }
 
     @httpPost
     global static void Post() {
+
+        try {
+            ContactDTO contact = (ContactDTO) JSON.Deserialize(RestContext.Request.RequestBody.toString(), ContactDTO.class);
+            InsertContact(contact);
+            RestContext.Response.StatusCode = 200;
+        } catch (Exception e) {
+            RestContext.Response.StatusCode = 500;
+        }
+    }
+
+    public static void InsertContact(ContactDTO contactToSave) {
+        Contact contact = new Contact();
+        contact.LastName = contactToSave.LastName;
+        insert contact;
     }
 
     @httpGet
@@ -21,4 +35,9 @@ global class ClassRest
     @httpPut
     global static void Put() {
     }
+
+    @httpDelete
+    global static void DoDelete() {
+    }
+
 }

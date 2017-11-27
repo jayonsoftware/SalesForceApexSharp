@@ -11,7 +11,7 @@ public class PropertyAndField
     public final String nameFinal = 'jay';
     public static String NameStatic = 'jay';
     public static final String NameStaticFinal = 'jay';
-
+    
     public List<Contact> ContactList = [SELECT Id, Email FROM Contact];
 
     public Set<String> stringSet = new Set<String>{};

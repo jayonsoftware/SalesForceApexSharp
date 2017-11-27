@@ -14,15 +14,4 @@ public with sharing class MethodComplex {
     {
          return Database.getQueryLocator([SELECT Id FROM Contact]);
     }
-
-    public static void VariableScope(Integer x)
-    {
-        if(x==5) {
-            List<Contact> objectList;
-            objectList = [SELECT Id FROM Contact];
-        } else {
-            List<Contact> objectList;
-            objectList = [SELECT Id FROM Contact];
-        }
-    }
 }

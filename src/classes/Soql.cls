@@ -34,8 +34,21 @@ public class Soql
 
     public static void OneVsListDemo()
     {
-        List<Contact> contacts = [SELECT Id, Email FROM Contact];
-
+        List<Contact> contacts = [SELECT Id, Email FROM Contact LIMIT 5];
         List<Contact> contact = [SELECT Id, Email FROM Contact LIMIT 1];
+    }
+
+    public static void VariableScope(Integer x)
+    {
+        if (x == 5)
+        {
+        List<Contact> objectList;
+        objectList = [SELECT Id FROM Contact LIMIT 5];
+        }
+        else
+        {
+        List<Contact> objectList;
+        objectList = [SELECT Id FROM Contact LIMIT 5];
+        }
     }
 }

@@ -9,7 +9,7 @@ global class ClassRest
     global static void Post() {
 
         try {
-            ContactDTO contact = (ContactDTO) JSON.Deserialize(RestContext.Request.RequestBody.toString(), ContactDTO.class);
+            ContactDTO contact = (ContactDTO) JSON.Deserialize(RestContext.Request.RequestBody.ToString(), ContactDTO.class);
             InsertContact(contact);
             RestContext.Response.StatusCode = 200;
         } catch (Exception e) {
